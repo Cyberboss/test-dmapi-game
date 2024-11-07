@@ -4,10 +4,13 @@
 
 /world/New()
 	TgsNew()
+	. = ..()
 	TgsInitializationComplete()
 
 /world/Topic()
 	TGS_TOPIC
+	return ..()
 
 /world/Reboot()
 	TgsReboot()
+	return ..()
